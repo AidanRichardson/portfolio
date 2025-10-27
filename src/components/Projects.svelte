@@ -11,7 +11,7 @@
 	];
 </script>
 
-<div class="rounded-xl p-4">
+<div class="p-4">
 	<div class="grid grid-cols-4 gap-3">
 		{#each projects as p}
 			<div class="aspect-square overflow-hidden rounded-lg">

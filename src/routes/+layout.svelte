@@ -2,6 +2,7 @@
 	import favicon from '$lib/assets/favicon.svg';
 	import '../app.css';
 	import Buttons from '../components/Buttons.svelte';
+	import Footer from '../components/Footer.svelte';
 	import Profile from '../components/Profile.svelte';
 
 	let { children } = $props();
@@ -11,8 +12,8 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-<div class="flex flex-col items-center justify-center">
-	<div class="w-full max-w-7xl px-4">
+<div class="flex min-h-screen flex-col items-center justify-start">
+	<div class="container-layout flex-grow px-4">
 		<div class="space-y-15">
 			<Profile />
 			<Buttons />
@@ -22,4 +23,6 @@
 			{@render children()}
 		</main>
 	</div>
+
+	<Footer />
 </div>
