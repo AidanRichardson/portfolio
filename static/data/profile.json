@@ -1,0 +1,34 @@
+{
+	"name": "Aidan Richardson",
+	"title": "Computer Science Student",
+	"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit...",
+	"image": "profilepic.jpg",
+	"projects": [
+		{
+			"title": "What's Playing?",
+			"image": [
+				"whatsplaying2.png",
+				"whatsplaying1.png",
+				"whatsplaying3.gif"
+			],
+			"description": "Basic docker app so a user can host thier spotify playing in a web app that can then be displayed on other devices"
+		}
+	],
+	"languages": {
+		"title": "Languages",
+		"items": [
+			{ "name": "Python", "icon": "python.svg" },
+			{ "name": "Java", "icon": "java.svg" },
+			{ "name": "JavaScript", "icon": "javascript.svg" },
+			{ "name": "TypeScript", "icon": "typescript.svg" }
+		]
+	},
+	"skills": {
+		"title": "skills",
+		"items": [
+			{ "name": "Python", "icon": "python.svg" },
+			{ "name": "JavaScript", "icon": "javascript.svg" },
+			{ "name": "TypeScript", "icon": "typescript.svg" }
+		]
+	}
+}

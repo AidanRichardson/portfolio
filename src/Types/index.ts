@@ -1,11 +1,15 @@
 type Item = {
-	id: number;
 	image: string[];
 	title: string;
 	description: string;
 };
 
+type item = {
+	name: string;
+	icon: string;
+};
+
 type List = {
 	title: string;
-	items: string[];
+	items: item[];
 };

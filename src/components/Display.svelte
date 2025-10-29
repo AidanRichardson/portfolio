@@ -17,7 +17,7 @@
 				on:click={() => openModal(d)}
 			>
 				<img
-					src={d.image[0]}
+					src={`/data/images/${d.image[0]}`}
 					alt=""
 					class="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
 				/>

@@ -5,7 +5,7 @@
 	const work: Item[] = [
 		{
 			id: 1,
-			image: ['src/lib/assets/whatsplaying1.png'],
+			image: ['whatsplaying2.png'],
 			title: 'Network Computing',
 			description: '1st Line IT Support'
 		}

@@ -5,7 +5,7 @@
 	const education: Item[] = [
 		{
 			id: 1,
-			image: ['src/lib/assets/whatsplaying3.gif'],
+			image: ['whatsplaying2.png'],
 			title: 'University of York',
 			description: 'Computer Science BEng'
 		}

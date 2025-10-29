@@ -38,7 +38,11 @@
 				{#each $selectedItem.image as img, i (i)}
 					<div id={'slide' + i} class="relative carousel-item w-full">
 						<!-- svelte-ignore a11y_img_redundant_alt -->
-						<img src={img} alt="Project image" class="max-h-[80vh] w-full object-contain" />
+						<img
+							src={`/data/images/${img}`}
+							alt="Project image"
+							class="max-h-[80vh] w-full object-contain"
+						/>
 						<div
 							class="absolute top-1/2 right-5 left-5 flex -translate-y-1/2 transform justify-between"
 						>
