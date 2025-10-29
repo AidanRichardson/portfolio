@@ -3,7 +3,10 @@
 	import '../app.css';
 	import Buttons from '../components/Buttons.svelte';
 	import Footer from '../components/Footer.svelte';
+	import ListModal from '../components/ListModal.svelte';
+	import PreviewModal from '../components/PreviewModal.svelte';
 	import Profile from '../components/Profile.svelte';
+	import { showListModal, showPreviewModal } from '../stores/modal';
 
 	let { children } = $props();
 </script>
@@ -23,6 +26,14 @@
 			{@render children()}
 		</main>
 	</div>
+
+	{#if showPreviewModal}
+		<PreviewModal />
+	{/if}
+
+	{#if showListModal}
+		<ListModal />
+	{/if}
 
 	<Footer />
 </div>
