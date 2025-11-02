@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { marked } from 'marked';
 	import { selectedList, showListModal } from '../stores/modal';
 	import { profile } from '../stores/profile';
 
@@ -14,7 +15,7 @@
 			<img
 				src={`/data/images/${$profile.image}`}
 				alt={$profile.name}
-				class="h-48 w-48 rounded-full object-cover transition-all duration-300 sm:h-40 sm:w-40 md:h-48 md:w-48 lg:h-56 lg:w-56 xl:h-64 xl:w-64"
+				class="h-48 w-48 rounded-full object-cover transition-all duration-300 sm:h-40 sm:w-40 md:h-48 md:w-48 lg:h-56 lg:w-56 xl:h-80 xl:w-80"
 			/>
 		</div>
 
@@ -41,7 +42,7 @@
 					</button>
 				</div>
 
-				<p class="text-wrap">{$profile.description}</p>
+				<div class="prose max-w-none prose-neutral">{@html $profile.description}</div>
 			</div>
 		</div>
 	</div>
