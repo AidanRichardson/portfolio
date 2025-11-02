@@ -6,12 +6,19 @@
 	"projects": [
 		{
 			"title": "What's Playing?",
+			"link": "https://github.com/AidanRichardson/whatsplaying",
+			"tools": [
+				{"name":"Docker", "icon":"docker.svg"},
+				{"name":"TypeScript", "icon":"typescript.svg"},
+				{"name":"Svelte", "icon":"svelte.svg"}
+
+			],
 			"image": [
 				"whatsplaying2.png",
 				"whatsplaying1.png",
 				"whatsplaying3.gif"
 			],
-			"description": "Basic docker app so a user can host thier spotify playing in a web app that can then be displayed on other devices"
+			"description": "Basic docker app so a user can host thier spotify playing in a web app that can then be displayed on other devices Basic docker app so a user can host thier spotify playing in a web app that can then be displayed on other devices Basic docker app so a user can host thier spotify playing in a web app that can then be displayed on other devices Basic docker app so a user can host thier spotify playing in a web app that can then be displayed on other devices"
 		}
 	],
 	"languages": {
