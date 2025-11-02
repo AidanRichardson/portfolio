@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { afterNavigate, beforeNavigate } from '$app/navigation';
 	import '../app.css';
 	import Buttons from '../components/Buttons.svelte';
 	import Footer from '../components/Footer.svelte';
@@ -8,6 +9,16 @@
 	import { display } from '../stores/display';
 	import { showListModal, showPreviewModal } from '../stores/modal';
 	import { profile as profileStore } from '../stores/profile';
+
+	let scrollY = 0;
+
+	beforeNavigate(() => {
+		scrollY = window.scrollY;
+	});
+
+	afterNavigate(() => {
+		window.scrollTo({ top: scrollY, behavior: 'instant' });
+	});
 
 	let { data, children } = $props();
 
@@ -32,7 +43,7 @@
 
 <div class="flex min-h-screen flex-col items-center justify-start">
 	<div class="container-layout flex-grow px-4">
-		<div class="space-y-15">
+		<div class="space-y-5">
 			<Profile />
 			<Buttons />
 		</div>

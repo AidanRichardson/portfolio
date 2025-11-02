@@ -24,7 +24,10 @@
 	>
 		<!-- svelte-ignore a11y_click_events_have_key_events -->
 		<!-- svelte-ignore a11y_no_static_element_interactions -->
-		<div class="flex flex-row justify-center overflow-hidden rounded-lg" on:click|stopPropagation>
+		<div
+			class="flex flex-col justify-center overflow-hidden rounded-lg md:flex-row"
+			on:click|stopPropagation
+		>
 			<button
 				type="button"
 				on:click={close}
@@ -75,7 +78,7 @@
 				{/each}
 			</div>
 
-			<div class="max-w-sm min-w-sm overflow-hidden bg-base-300 p-6 text-wrap">
+			<div class="w-full min-w-sm overflow-hidden bg-base-300 p-6 text-wrap md:max-w-sm">
 				<h2 class="mb-4 text-2xl font-bold">{$selectedItem.title}</h2>
 				<p>{$selectedItem.description}</p>
 			</div>

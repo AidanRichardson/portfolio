@@ -8,8 +8,8 @@
 	}
 </script>
 
-<div class="p-4">
-	<div class="grid grid-cols-4 gap-3">
+<div class="pt-3">
+	<div class="grid grid-cols-3 gap-0.5">
 		{#each $display as d}
 			<button
 				type="button"

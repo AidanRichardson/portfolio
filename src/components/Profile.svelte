@@ -46,9 +46,9 @@
 		</div>
 	</div>
 
-	<div class=" flex flex-row justify-start space-x-8 rounded-xl px-6">
+	<div class="flex flex-wrap justify-start gap-6 pl-4">
 		{#each $profile.links as l}
-			<div class="flex flex-col items-center space-y-2">
+			<div class="flex flex-col items-center space-y-1">
 				<a
 					href={l.link}
 					target="_blank"
