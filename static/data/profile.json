@@ -1,7 +1,7 @@
 {
 	"name": "Aidan Richardson",
 	"title": "Computer Science Student",
-	"description": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"	,
+	"description": "<p>Hi, I'm Aidan, an enthusiastic computer scientist with strong interests in <b>data science</b>, <b>web development</b>, and <b>cyber security</b>. I'm currently in the final year of my <b>BEng in Computer Science</b> at the <b>University of York</b>. At university I have developed an appreciation for using data to solve real-world problems and hope to apply this in the workplace.</p><p>I thrive in the <b>fast-moving</b> world of technology, where I'm constantly learning new topics and skills. I <b>learn quickly</b> and have <b>strong problem-solving skills</b> which I apply through both academic work and personal projects. I’ve recently started sharing my projects on <b>GitHub</b>, hoping they can inspire and assist others.</p><p>I have experience working in <b>IT support</b> which has strengthened my <b>communication</b>, <b>teamwork</b>, and <b>leadership</b> skills, as well as my ability to <b>explain complex concepts clearly and effectively</b>.</p><p>After completing my degree I aspire to apply my skills on projects that make a meaningful impact and help others.</p>",
 	"image": "profilepic.jpg",
 	"projects": [
 		{
@@ -34,10 +34,10 @@
 	"links":[{
 		"link": "https://github.com/aidanrichardson",
 		"icon":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYiBwe7URF5iyjMW20qp4IvMNvys8-tGb_-A&s",
-		"title":"github"
+		"title":"GitHub"
 	},{
 		"link":"https://www.linkedin.com/in/aidan-richardson-964888250/",
 		"icon":"https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/1024px-LinkedIn_icon.svg.png",
-		"title":"linkedin"
+		"title":"LinkedIn"
 	}]
 }
