@@ -28,7 +28,7 @@
 			<button
 				type="button"
 				on:click={close}
-				class="absolute top-3 right-3 z-10 text-4xl text-white hover:text-gray-300"
+				class="absolute top-3 right-3 z-10 cursor-pointer text-4xl"
 				aria-label="Close modal"
 			>
 				&times;
@@ -75,7 +75,7 @@
 				{/each}
 			</div>
 
-			<div class="max-w-sm min-w-sm overflow-hidden bg-gray-900 p-6 text-wrap text-white">
+			<div class="max-w-sm min-w-sm overflow-hidden bg-base-300 p-6 text-wrap">
 				<h2 class="mb-4 text-2xl font-bold">{$selectedItem.title}</h2>
 				<p>{$selectedItem.description}</p>
 			</div>

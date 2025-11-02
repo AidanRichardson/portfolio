@@ -1,6 +1,19 @@
 @import 'tailwindcss';
 @plugin '@tailwindcss/typography';
-@plugin "daisyui";
+@plugin "daisyui" {
+	themes:
+		emerald --default,
+		dark --prefersdark;
+}
+
+@plugin "daisyui/theme" {
+	name: 'dark';
+	default: false;
+	prefersdark: true;
+	--color-base-100: oklch(0.22 0.016 252.4);
+	--color-base-200: oklch(0.19 0.014 253.1);
+	--color-base-300: oklch(0.15 0.012 254.1);
+}
 
 .container-layout {
 	@apply mx-auto w-full max-w-7xl px-4;
