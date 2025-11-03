@@ -1,9 +1,9 @@
 <script lang="ts">
-	import { selectedItem, showPreviewModal } from '../stores/modal';
+	import { goto } from '$app/navigation';
+	import { selectedItem } from '../stores/modal';
 
 	function close() {
-		showPreviewModal.set(false);
-		selectedItem.set(null);
+		goto('/');
 	}
 
 	function handleKeydown(event: KeyboardEvent) {
@@ -13,7 +13,7 @@
 	}
 </script>
 
-{#if $showPreviewModal && $selectedItem}
+{#if $selectedItem}
 	<div
 		class="fixed inset-0 flex items-center justify-center bg-black/50 p-4"
 		role="dialog"
@@ -37,37 +37,47 @@
 				&times;
 			</button>
 
-			<div class="carousel max-w-[125vh] bg-black">
-				{#each $selectedItem.image as img, i (i)}
-					<div id={'slide' + i} class="relative carousel-item w-full">
-						<!-- svelte-ignore a11y_img_redundant_alt -->
-						<img
-							src={`/data/images/${img}`}
-							alt="Project image"
-							class="max-h-[50vh] w-full object-contain md:max-h-[80vh]"
-						/>
-						<div
-							class="absolute top-1/2 right-5 left-5 flex -translate-y-1/2 transform justify-between"
-						>
-							<a
-								href={'#slide' +
-									(($selectedItem.image.length + i - 1) % $selectedItem.image.length)}
-								class="btn btn-circle"
-								aria-label="Previous image"
+			{#if $selectedItem.image.length == 1}
+				<div class="max-w-[125vh] bg-black">
+					<img
+						src={`/data/images/${$selectedItem.image[0]}`}
+						alt="Project image"
+						class="max-h-[50vh] w-full min-w-2xl object-contain md:max-h-[80vh]"
+					/>
+				</div>
+			{:else}
+				<div class="carousel max-w-[125vh] bg-black">
+					{#each $selectedItem.image as img, i (i)}
+						<div id={'slide' + i} class="relative carousel-item w-full">
+							<!-- svelte-ignore a11y_img_redundant_alt -->
+							<img
+								src={`/data/images/${img}`}
+								alt="Project image"
+								class="max-h-[50vh] w-full object-contain md:max-h-[80vh]"
+							/>
+							<div
+								class="absolute top-1/2 right-5 left-5 flex -translate-y-1/2 transform justify-between"
 							>
-								❮
-							</a>
-							<a
-								href={'#slide' + ((i + 1) % $selectedItem.image.length)}
-								class="btn btn-circle"
-								aria-label="Next image"
-							>
-								❯
-							</a>
+								<a
+									href={'#slide' +
+										(($selectedItem.image.length + i - 1) % $selectedItem.image.length)}
+									class="btn btn-circle"
+									aria-label="Previous image"
+								>
+									❮
+								</a>
+								<a
+									href={'#slide' + ((i + 1) % $selectedItem.image.length)}
+									class="btn btn-circle"
+									aria-label="Next image"
+								>
+									❯
+								</a>
+							</div>
 						</div>
-					</div>
-				{/each}
-			</div>
+					{/each}
+				</div>
+			{/if}
 
 			<div
 				class="flex min-h-0 w-full min-w-0 flex-col justify-between overflow-y-auto bg-base-300 p-6 text-wrap md:max-w-sm"

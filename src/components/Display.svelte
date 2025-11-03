@@ -1,27 +1,42 @@
 <script lang="ts">
-	import { display } from '../stores/display';
-	import { selectedItem, showPreviewModal } from '../stores/modal';
-
-	function openModal(d: Item) {
-		selectedItem.set(d);
-		showPreviewModal.set(true);
-	}
+	import { page } from '$app/state';
+	import { profile } from '../stores/profile';
 </script>
 
 <div class="pt-3">
 	<div class="grid grid-cols-3 gap-0.5">
-		{#each $display as d}
-			<button
-				type="button"
-				class="aspect-square overflow-hidden rounded-lg"
-				on:click={() => openModal(d)}
-			>
-				<img
-					src={`/data/images/${d.image[0]}`}
-					alt=""
-					class="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
-				/>
-			</button>
-		{/each}
+		{#if page.route.id == '/(app)'}
+			{#each $profile.projects as item, index}
+				<a href={'/preview/projects/' + index} class="aspect-square overflow-hidden rounded-lg"
+					><img
+						src={`/data/images/${item.image[0]}`}
+						alt=""
+						class="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
+					/></a
+				>
+			{/each}
+		{/if}
+		{#if page.route.id == '/(app)/work'}
+			{#each $profile.work as item, index}
+				<a href={'/preview/work/' + index} class="aspect-square overflow-hidden rounded-lg"
+					><img
+						src={`/data/images/${item.image[0]}`}
+						alt=""
+						class="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
+					/></a
+				>
+			{/each}
+		{/if}
+		{#if page.route.id == '/(app)/education'}
+			{#each $profile.education as item, index}
+				<a href={'/preview/education/' + index} class="aspect-square overflow-hidden rounded-lg"
+					><img
+						src={`/data/images/${item.image[0]}`}
+						alt=""
+						class="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
+					/></a
+				>
+			{/each}
+		{/if}
 	</div>
 </div>

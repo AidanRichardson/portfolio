@@ -21,6 +21,23 @@
 			"description": "Basic docker app so a user can host thier spotify playing in a web app that can then be displayed on other devices Basic docker app so a user can host thier spotify playing in a web app that can then be displayed on other devices Basic docker app so a user can host thier spotify playing in a web app that can then be displayed on other devices Basic docker app so a user can host thier spotify playing in a web app that can then be displayed on other devices"
 		}
 	],
+	"work": [
+		{
+			"id": 1,
+			"image": ["itsupport.avif"],
+			"title": "1st Line IT Support Technician",
+			"company":"Network Computing LTD",
+			"description": "As a 1st Line at Network I worked in a small team to provide IT support to over 1500 end users and machines. I had to learn quickly and be adaptable as I was on the phones helping clients within my first month on the job. I spoke to a large range of clients from junior staff to chief executives, testing my communication skills. I learnt to demystify complex systems to make them easy for users to understand. Early on, I understood the importance of utilising the skills of my team members, allowing me to get the job done more effectively as well as developing my skills to make my work better in the future. By working at a smaller company it has allowed me to mature quickly by experiencing some challenging situations and learning from them. It allowed me to see the ins and outs of a company as well as understanding my role in a team."
+		}
+	],
+	"education": [
+		{
+			"id": 1,
+			"image": ["uoy.jpeg"],
+			"title": "University of York",
+			"description": " I am currently studying Computer Science at the University of York. In my time at York I have been taught a wide range of computer science concepts, with my favourite being data science and cryptography. I have averaged 73% (1st Class) throughout my degree and I continue to aim for a first in my final year. In my time at university I have improved my leadership, time management and communication skills, through societies and group projects. I have explored new hobbies such as climbing and badminton which I use to stay fit in my spare time."
+		}
+	],
 	"languages": {
 		"title": "Languages",
 		"items": [

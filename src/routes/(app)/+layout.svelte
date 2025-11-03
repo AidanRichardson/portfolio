@@ -1,14 +1,12 @@
 <script lang="ts">
 	import { afterNavigate, beforeNavigate } from '$app/navigation';
-	import '../app.css';
-	import Buttons from '../components/Buttons.svelte';
-	import Footer from '../components/Footer.svelte';
-	import ListModal from '../components/ListModal.svelte';
-	import PreviewModal from '../components/PreviewModal.svelte';
-	import Profile from '../components/Profile.svelte';
-	import { display } from '../stores/display';
-	import { showListModal, showPreviewModal } from '../stores/modal';
-	import { profile as profileStore } from '../stores/profile';
+	import '../../app.css';
+	import Buttons from '../../components/Buttons.svelte';
+	import Footer from '../../components/Footer.svelte';
+	import ListModal from '../../components/ListModal.svelte';
+	import Profile from '../../components/Profile.svelte';
+	import { showListModal } from '../../stores/modal';
+	import { profile as profileStore } from '../../stores/profile';
 
 	let scrollY = 0;
 
@@ -24,7 +22,6 @@
 
 	if (data?.profile) {
 		profileStore.set(data.profile);
-		display.set(data.profile.projects);
 	}
 </script>
 
@@ -50,10 +47,6 @@
 
 		<main>{@render children()}</main>
 	</div>
-
-	{#if showPreviewModal}
-		<PreviewModal />
-	{/if}
 
 	{#if showListModal}
 		<ListModal />
