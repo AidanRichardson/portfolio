@@ -14,4 +14,4 @@ EXPOSE 3000
 
 VOLUME ["/app/data"]
 
-CMD ["npm", "run", "preview", "--", "--host"]
+CMD ["node", "build/index.js"]
