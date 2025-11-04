@@ -82,7 +82,7 @@
 									alt={tool.name + ' icon'}
 									class="mb-1 h-12 w-12 object-contain"
 								/>
-								<span class="text-center text-sm font-medium text-white">{tool.name}</span>
+								<span class="text-center text-sm font-medium">{tool.name}</span>
 							</div>
 						{/each}
 					</div>
@@ -95,7 +95,7 @@
 						href={$selectedItem.link}
 						target="_blank"
 						rel="noopener noreferrer"
-						class="inline-block rounded-lg bg-blue-800 px-4 py-2 font-medium text-white transition hover:bg-blue-600"
+						class="btn btn-lg btn-primary"
 					>
 						[View Project]
 					</a>
