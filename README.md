@@ -1,38 +1,30 @@
-# sv
+# Aidanrichardson.me
+Welcome to my portfolio - built to showcase my projects, skills, experience and education.
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+**[View it here → aidanrichardson.me](https://aidanrichardson.me)**
 
-## Creating a project
+## Tech Stack
+- **Frontend:** SvelteKit, TypeScript, Tailwind CSS & DaisyUI
+- **Deployment:** Vercel  
+- **Version Control:** Git & GitHub Actions (CI/CD)
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Development
+To run locally:
 
-```sh
-# create a new project in the current directory
-npx sv create
+```bash
+# Clone the repo
+git clone https://github.com/AidanRichardson/portfolio.git
 
-# create a new project in my-app
-npx sv create my-app
-```
+# Navigate into the directory
+cd portfolio
 
-## Developing
+# Install dependencies
+npm install
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
+# Run the development server
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
-
-To create a production version of your app:
-
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+## Contact Me
+* **LinkedIn:** [linkedin.com/in/aidanrichardson](https://www.linkedin.com/in/aidan-richardson-964888250/)
+* **Website:** [aidanrichardson.me](https://aidanrichardson.me/)
