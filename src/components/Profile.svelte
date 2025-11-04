@@ -31,14 +31,14 @@
 						class="cursor-pointer border-none bg-transparent p-0 pr-10 text-left hover:underline"
 						on:click={() => openModal($profile.languages)}
 					>
-						<h1><b>{$profile.languages.items.length}</b> Languages</h1>
+						<h1><b>{$profile.languages.list_items.length}</b> Languages</h1>
 					</button>
 					<button
 						type="button"
 						class="cursor-pointer border-none bg-transparent p-0 pr-10 text-left hover:underline"
 						on:click={() => openModal($profile.skills)}
 					>
-						<h1><b>{$profile.skills.items.length}</b> Skills</h1>
+						<h1><b>{$profile.skills.list_items.length}</b> Skills</h1>
 					</button>
 				</div>
 

@@ -21,7 +21,7 @@
 	$: id = page.params.id;
 	$: type = page.params.type;
 
-	function openModal(d: Item) {
+	function openModal(d: PreviewItem) {
 		selectedItem.set(d);
 	}
 

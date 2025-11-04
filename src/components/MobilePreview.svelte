@@ -1,6 +1,5 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
-	import { onMount } from 'svelte';
 	import { selectedItem } from '../stores/modal';
 
 	function close() {
@@ -20,6 +19,7 @@
 		</button>
 		{#if $selectedItem.image.length == 1}
 			<div class="max-w-[125vh] bg-black">
+				<!-- svelte-ignore a11y_img_redundant_alt -->
 				<img
 					src={`/data/images/${$selectedItem.image[0]}`}
 					alt="Project image"
@@ -27,10 +27,10 @@
 				/>
 			</div>
 		{:else}
-			<!-- Image carousel -->
 			<div class="carousel bg-black">
 				{#each $selectedItem.image as img, i (i)}
 					<div id={'slide' + i} class="relative carousel-item w-full">
+						<!-- svelte-ignore a11y_img_redundant_alt -->
 						<img
 							src={`/data/images/${img}`}
 							alt="Project image"
@@ -61,7 +61,6 @@
 			</div>
 		{/if}
 
-		<!-- Details panel -->
 		<div class="flex w-full flex-col justify-between overflow-y-auto bg-base-300 p-6">
 			<div>
 				<h1 class="mb-3 text-3xl font-bold">{$selectedItem.title}</h1>

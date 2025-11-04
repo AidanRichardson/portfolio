@@ -21,10 +21,10 @@
 		tabindex="-1"
 		on:keydown={handleKeydown}
 	>
-		<!-- Overlay background -->
 		<div class="absolute inset-0 bg-black/50" on:click={close} aria-hidden="true"></div>
 
-		<!-- Modal content -->
+		<!-- svelte-ignore a11y_click_events_have_key_events -->
+		<!-- svelte-ignore a11y_no_static_element_interactions -->
 		<div
 			class="relative z-10 flex flex-row justify-center overflow-hidden rounded-2xl bg-base-100 text-base-content shadow-lg"
 			on:click|stopPropagation
@@ -42,7 +42,7 @@
 					</button>
 				</div>
 				<ul class="list-none space-y-2 px-6 py-2">
-					{#each $selectedList.items as item}
+					{#each $selectedList.list_items as item}
 						<li class="flex items-center justify-between text-lg">
 							<span>{item.name}</span>
 							<img

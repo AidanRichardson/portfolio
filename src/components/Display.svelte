@@ -3,7 +3,7 @@
 	import { profile } from '../stores/profile';
 </script>
 
-<div class="pt-3">
+<div class="pt-1 pb-3">
 	<div class="grid grid-cols-3 gap-0.5">
 		{#if page.route.id == '/(app)'}
 			{#each $profile.projects as item, index}
