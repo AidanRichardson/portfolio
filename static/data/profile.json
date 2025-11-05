@@ -5,7 +5,7 @@
 	"image": "profilepic.jpg",
 	"projects": [
 		{
-			"title": "What's Playing?",
+			"title": "WhatsPlaying",
 			"link": "https://github.com/AidanRichardson/whatsplaying",
 			"tools": [
 				{"name":"Docker", "icon":"docker.svg"},
@@ -14,11 +14,11 @@
 
 			],
 			"image": [
-				"whatsplaying2.png",
 				"whatsplaying1.png",
+				"whatsplaying2.png",
 				"whatsplaying3.gif"
 			],
-			"description": "Basic docker app so a user can host thier spotify playing in a web app that can then be displayed on other devices Basic docker app so a user can host thier spotify playing in a web app that can then be displayed on other devices Basic docker app so a user can host thier spotify playing in a web app that can then be displayed on other devices Basic docker app so a user can host thier spotify playing in a web app that can then be displayed on other devices"
+			"description": "WhatsPlaying is lightweight docker app that lets users display what's currently playing on their spotify account on any device with a web browser. It's perfect for showing music on smart displays and other devices on the local network. I built this app mainly so my smart TV could display the music playing when I have friends over. This is my first svelte app and I have learnt a lot. It is also the first app I have released that will require user's to set up themselves. This has taught me a lot about making a guide and keeping the app simple/user friendly. I look forward to using these skills on future projects and will occasionally update this app with new features."
 		}
 	],
 	"work": [
