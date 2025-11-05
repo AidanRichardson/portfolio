@@ -59,6 +59,7 @@
 			{ "name": "Time Management", "icon": "timeman.avif" },
 			{ "name": "Problem Solving", "icon": "psolving.jpg" },
 			{ "name": "Linux", "icon": "linux.svg" },
+			{ "name": "Docker", "icon": "docker.svg" },
 			{ "name": "Anaconda", "icon": "anaconda.svg" },
 			{ "name": "Jupyter Notebooks", "icon": "jupyter.svg" },
 			{ "name": "Pandas", "icon": "pandas.svg" },
