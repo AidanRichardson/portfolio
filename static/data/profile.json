@@ -42,15 +42,32 @@
 			{ "name": "Python", "icon": "python.svg" },
 			{ "name": "Java", "icon": "java.svg" },
 			{ "name": "JavaScript", "icon": "javascript.svg" },
-			{ "name": "TypeScript", "icon": "typescript.svg" }
+			{ "name": "TypeScript", "icon": "typescript.svg" },
+			{ "name": "HTML", "icon": "html.svg" },
+			{ "name": "CSS", "icon": "css.svg" },
+			{ "name": "SQL", "icon": "sql.svg" },
+			{ "name": "YAML", "icon": "yaml.svg" }
 		]
 	},
 	"skills": {
 		"title": "skills",
 		"list_items": [
-			{ "name": "Python", "icon": "python.svg" },
-			{ "name": "JavaScript", "icon": "javascript.svg" },
-			{ "name": "TypeScript", "icon": "typescript.svg" }
+			{ "name": "Leadership", "icon": "leadership.png" },
+			{ "name": "Communication", "icon": "communication.jpg" },
+			{ "name": "IT Skills", "icon": "itskills.jpg" },
+			{ "name": "Project Management", "icon": "projectman.webp" },
+			{ "name": "Time Management", "icon": "timeman.avif" },
+			{ "name": "Problem Solving", "icon": "psolving.jpg" },
+			{ "name": "Linux", "icon": "linux.svg" },
+			{ "name": "Anaconda", "icon": "anaconda.svg" },
+			{ "name": "Jupyter Notebooks", "icon": "jupyter.svg" },
+			{ "name": "Pandas", "icon": "pandas.svg" },
+			{ "name": "SciKitLearn", "icon": "scikitlearn.svg" },
+			{ "name": "MatPlotLib", "icon": "matplotlib.svg" },
+			{ "name": "SQLite", "icon": "sqlite.svg" },
+			{ "name": "PyTorch", "icon": "pytorch.svg" },
+			{ "name": "React", "icon": "react.svg" },
+			{ "name": "Svelte", "icon": "svelte.svg" }
 		]
 	},
 	"links":[{
